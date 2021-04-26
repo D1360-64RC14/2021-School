@@ -11,6 +11,8 @@
 \RequirePackage{fontspec}
 \RequirePackage[autostyle=false, style=english]{csquotes}
 \RequirePackage{hyperref}
+\RequirePackage{enumerate}
+\RequirePackage{enumitem}
 
 \geometry{
     layout=a4paper, %      A4 Paper        %
@@ -24,9 +26,9 @@
 
 \setmainfont{Calibri}
 
-\hypersetup{
-    bookmarks=true
-}
+% \hypersetup{
+%     bookmarks=true
+% }
 
 \parindent=24pt
 \pagestyle{fancy}
@@ -34,11 +36,11 @@
 \MakeOuterQuote{"}
 
 \renewenvironment{day}[1]{
-    \addcontentsline{toc}{chapter}{#1}
     \newpage
     \fancyhf{}
     \rhead{\heading{5}{#1}}
 }{}
+% \addcontentsline{toc}{chapter}{#1}
 
 \newcommand{\heading}[2]{
        \ifx #11 {\fontsize{24.00pt}{26.880pt}\selectfont#2}

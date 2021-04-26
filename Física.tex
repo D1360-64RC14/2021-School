@@ -1,6 +1,7 @@
 \documentclass{SchoolBook}
 
 \usepackage{lipsum}
+\usepackage{tikz}
 
 \begin{document}
     \begin{day}{22/04/2021}
@@ -22,4 +23,101 @@
             \end{enumerate}
         \end{enumerate}
     \end{day}
+    
+    \begin{day}{26/04/2021}
+        \title{3}{Termometria}
+        
+        Temperatura é uma grandeza física que mede o estado de \textbf{agitação das partíulas} de um corpo, caracterizando o seu estado térmico.
+        
+        \title{3}{Calor}
+        
+        É energia térmica \textbf{em trânsito}, entre dois corpos ou sistemas, decorrente apenas da existência de uma diferença de temperatura entre eles.
+        
+        \title{3}{Escalas Termométricas}
+        
+        Uma escala termométrica corresponde a um conjunto de valores numéricos, onde cada um desses valores está associado a uma temperatura.
+        
+        Para a graduação das escalas foram escolhidos, para pontos fixos, dois fenômenos que se reproduzem sempre nas mesmas condições: a fusão do gelo e a ebulição da água, ambas sob pressão normal.
+        
+        \vspace{3pt}
+        \begin{itemize}[nosep]
+            \item Primeiro ponto fixo: corresponde à temperatura de fusão do gelo; chamado ponto do gelo;
+            \item Segundo ponto fixo: corresponde à temperatura de ebulição da água; chamado ponto de vapor.
+        \end{itemize}
+        
+        \title{3}{Relações entre as escalas}
+        
+        Supondo que a grandeza termométrica seja a mesma, podemos relacionar as temperaturas assinaladas pelas escalas termométricas da seguinte forma:
+        \vspace{6pt}
+        
+        \begin{tikzpicture}\setmainfont{Latin Modern Roman}
+            % Change from white to gray to enable grid
+            \draw [very thin, white,step=1] (-8,0) grid (8,-5);
+          % \filldraw [fill=black] (0,0) circle [radius=1.5pt];
+            
+            \coordinate (HTL) at (-3.5,0);
+            \coordinate (HTR) at (3.5,0);
+            
+            \coordinate (HCL) at (-3.5,-2);
+            \coordinate (HCR) at (3.5,-2);
+            
+            \coordinate (HBL) at (-3.5,-5);
+            \coordinate (HBR) at (3.5,-5);
+            
+            \draw (HTL) -- (HTR);
+            \draw (HCL) -- (HCR);
+            \draw (HBL) -- (HBR);
+            
+            \coordinate (VLT) at (-2,0);
+            \coordinate (VLM) at (-2,-2);
+            \coordinate (VLB) at (-2,-5);
+            
+            \coordinate (VCT) at (0,0);
+            \coordinate (VCM) at (0,-2);
+            \coordinate (VCB) at (0,-5);
+            
+            \coordinate (VRT) at (2,0);
+            \coordinate (VRM) at (2,-2);
+            \coordinate (VRB) at (2,-5);
+            
+            \draw [|-|,thick] (VLT) -- (VLB);
+            \draw [|-|,thick] (VCT) -- (VCB);
+            \draw [|-|,thick] (VRT) -- (VRB);
+            
+            \draw [dashed] (VLT) to[out=0,in=0,distance=-1cm] (VLB);
+            \draw [dashed] (VCT) to[out=0,in=0,distance=-1cm] (VCB);
+            \draw [dashed] (VRT) to[out=0,in=0,distance=-1cm] (VRB);
+            
+            \draw [dashed] (VLM) to[out=0,in=0,distance=0.8cm] (VLB);
+            \draw [dashed] (VCM) to[out=0,in=0,distance=0.8cm] (VCB);
+            \draw [dashed] (VRM) to[out=0,in=0,distance=0.8cm] (VRB);
+            
+            \node [above,align=center] at (VLT) {Celsius   \\100};
+            \node [above,align=center] at (VCT) {Kelvin    \\373};
+            \node [above,align=center] at (VRT) {Fahrenheit\\212};
+            
+            \node [below,align=center] at (VLB) {0  };
+            \node [below,align=center] at (VCB) {273};
+            \node [below,align=center] at (VRB) {32 };
+            
+            \node [below left,align=center] at (VLM) {C};
+            \node [below left,align=center] at (VCM) {K};
+            \node [below left,align=center] at (VRM) {F};
+            
+            \node [align=right,left] at (HCL) {Temperatura\\qualquer};
+        \end{tikzpicture}
+        
+        $$ \frac{C-0}{100-0} = \frac{K-273}{373-273} = \frac{F-32}{212-32} \Longrightarrow \frac{C}{100} = \frac{K-273}{100} = \frac{F-32}{180} $$
+    \end{day}
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
