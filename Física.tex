@@ -2,24 +2,64 @@
 
 \usepackage{lipsum}
 \usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{icomma}
 
 \begin{document}
     \begin{day}{22/04/2021}
         \begin{enumerate}
             \item[1.] Sobre um corpo de massa $ 8 kg $, inicialmente em repouso, age uma força constante $ \vec{F} = 80 N $, na direção do deslocamento.
             Determine o trabalho realizado pela foça nos primeiros 20 segundos de movimento.
+            \begin{align*}
+                        \tau &= 80 * \Delta S   \\ 
+                    \Delta S &= 0,5 * a * 20^2  \\
+                          80 &= 8 * a           \\
+                \frac{80}{8} &= a               \\
+                    10 m/s^2 &= a               \\
+                    \Delta S &= 0,5 * 10 * 20^2 \\
+                    \Delta S &= 2000 metros
+            \end{align*}
 
             \item[2.] Um ponto material de massa $ 6 kg $ tem velocidade de $ 8 m/s $ quando sobre ele passa a agir uma força de intensidade $ 30 N $ na direção do movimento, durante $ 4 s $. Determine:
             \begin{enumerate}
                 \item[a)] o deslocamento durante esses $ 4 s$;
+                \begin{align*}
+                        \Delta S &= 8 + 0,5 * a * 4^2 \\
+                              30 &= 6 * a             \\
+                    \frac{30}{6} &= a                 \\
+                         5 m/s^2 &= a                 \\
+                        \Delta S &= 8 + 0,5 * 5 * 4^2 \\
+                        \Delta S &= 169 metros
+                \end{align*}
+                
                 \item[b)] o trabalho realizado nesse deslocamento.
+                \begin{align*}
+                    \tau &= 30 * 168 \\
+                    \tau &= 5040
+                \end{align*}
             \end{enumerate}
 
             \item[3.] Um móvel de massa $ 40 kg $ tem velocidade constante de $ 90 km/h $.
             Num determinado instante entra numa região rugosa onde o coeficiente de atrito é igual a $ 0,2 $. Determine:
             \begin{enumerate}
                 \item[a)] o espaço percorrido pelo móvel na região rugosa, até parar;
+                \begin{align*}
+                             F_{at} &= 0,2 * 40 * 9,8             \\
+                             F_{at} &= 78,4 newtons               \\
+                               78,4 &= 40 * a                     \\
+                    \frac{78,4}{40} &= a                          \\
+                         1,96 m/s^2 &= a                          \\
+                                0^2 &= 25^2 + 2 * 1,96 * \Delta S \\
+                           \Delta S &= 159,43877551 metros
+                \end{align*}
+                
                 \item[b)] o trabalho realizado pela força de atrito.
+                \begin{align*}
+                    \tau &= 78,4 * 159,43877551 * \cos(180) \\
+                    \tau &= 12499,999999984 * -1            \\
+                    \tau &= -12499,999999984 joules
+                \end{align*}
             \end{enumerate}
         \end{enumerate}
     \end{day}
@@ -109,15 +149,81 @@
         
         $$ \frac{C-0}{100-0} = \frac{K-273}{373-273} = \frac{F-32}{212-32} \Longrightarrow \frac{C}{100} = \frac{K-273}{100} = \frac{F-32}{180} $$
     \end{day}
+    
+    \begin{day}{27/04/2021}
+        \title{3}{ATIVIDADE}
+        
+        \begin{enumerate}
+            \item[1.] A temperatura normal de um corpo humano é 36°C. Qual é essa temperatura expressa nas escalas Fahrenheit e Kelvin?
+            \begin{multicols}{2}
+                \begin{align*}
+                    \frac{36}{\frac{100}{20}} &= \frac{F - 32}{\frac{180}{20}} \\
+                                 \frac{36}{5} &= \frac{F - 32}{9}              \\
+                             \frac{F - 32}{9} &= \frac{36}{5}                  \\
+                             \frac{F - 32}{9} &= 7,2                           \\
+                                       F - 32 &= 7,2 * 9                       \\
+                                       F - 32 &= 64,8                          \\
+                                            F &= 64,8 + 32                     \\
+                                            F &= 96,8 ^\circ Fahrenheit
+                \end{align*}\\
+                \begin{align*}
+                    \frac{36}{\frac{100}{20}} &= \frac{K - 273}{\frac{100}{20}} \\
+                                 \frac{36}{5} &= \frac{K - 273}{5}              \\
+                            \frac{K - 273}{5} &= \frac{36}{5}                   \\
+                            \frac{K - 273}{5} &= 7,2                            \\
+                                      K - 273 &= 7,2 * 5                        \\
+                                            K &= 36 + 273                       \\
+                                            K &= 309 Kelvin
+                \end{align*}
+            \end{multicols}
+            
+            \item[2.] Transformar 104°F nas escalas Celsius e Kelvin.
+            \begin{multicols}{2}
+                \begin{align*}
+                    \frac{104 - 32}{\frac{180}{20}} &= \frac{C}{\frac{100}{20}} \\
+                                 \frac{104 - 32}{9} &= \frac{C}{5}              \\
+                                       \frac{72}{9} &= \frac{C}{5}              \\
+                                                  8 &= \frac{C}{5}              \\
+                                        \frac{C}{5} &= 8                        \\
+                                                  C &= 8 * 5                    \\
+                                                  C &= 40 ^\circ Celsius
+                \end{align*}
+                \begin{align*}
+                    \frac{104 - 32}{\frac{180}{20}} &= \frac{K - 273}{\frac{100}{20}} \\
+                                 \frac{104 - 32}{9} &= \frac{K - 273}{5}              \\
+                                       \frac{72}{9} &= \frac{K - 273}{5}              \\
+                                                  8 &= \frac{K - 273}{5}              \\
+                                  \frac{K - 273}{5} &= 8                              \\
+                                            K - 273 &= 8 * 5                          \\
+                                            K - 273 &= 40                             \\
+                                                  K &= 40 + 273                       \\
+                                                  K &= 313 Kelvin
+                \end{align*}
+            \end{multicols}
+            
+            \item[3.] Numa das regiões mais frias do mundo, o termômetro indica -76°F. Qual será o valor dessa temperatura na escala Celsius?
+            \begin{align*}
+                \frac{-76 - 32}{\frac{180}{20}} &= \frac{C}{\frac{100}{20}} \\
+                             \frac{-76 - 32}{9} &= \frac{C}{5}              \\
+                                 \frac{-108}{9} &= \frac{C}{5}              \\
+                                            -12 &= \frac{C}{5}              \\
+                                    \frac{C}{5} &= -12                      \\
+                                              C &= -12 * 5                  \\
+                                              C &= -60 ^\circ Celsius
+            \end{align*}
+            
+            \item[4.] Ao medir a temperatura de um gás, verificou-se que a leitura era a mesma, tanto na escala Celsius como na Fahrenheit. Qual era essa temperatura?
+            \begin{align*}
+                \frac{T - 32}{\frac{180}{20}} &= \frac{T}{\frac{100}{20}} \\
+                             \frac{T - 32}{9} &= \frac{T}{5}              \\
+                                 (T - 32) * 5 &= 9T                       \\
+                                     5T - 160 &= 9T                       \\
+                                      5T - 9T &= 160                      \\
+                                          -4T &= 160                      \\
+                                            T &= \frac{160}{-4}           \\
+                                            T &= -40^\circ
+            \end{align*}
+        \end{enumerate}
+    \end{day}
 \end{document}
-
-
-
-
-
-
-
-
-
-
 

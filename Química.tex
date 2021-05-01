@@ -1,9 +1,78 @@
 \documentclass{SchoolBook}
 
+\usepackage{graphicx}
+\usepackage{chemfig}
+
 \begin{document}
     \begin{day}{22/04/2021}
         \title{3}{Grupos de Hidocarbonetos de Cadeia Fechada}
         Ciclanos: São hidrocarbonetos de cadeia fechada com ligação simples antre átomos de carbono
         <image>
+    \end{day}
+    \begin{day}{29/04/2021}
+        \title{3}{Grupos de Hidrocarbonetos de Cadeia Fechada}
+        
+        \textbf{Ciclenos}: são hidrocarbonetos de cadeia cíclica ou fechada com ligação dupla entre os átomos de carbono. Exemplos:
+        
+        \chemfig{H -[:53] C * 5 (=[:0]C(-) - C(-[:-45]H)(-[:45]H) - C(-[:45]H)(-[:135]H) - C(-[:225]H)(-[:135]H) - C(-H)(-H))}
+        
+        \chemfig{[:18]() * 5 (= () - () - () - () -)}
+        
+        \chemfig{H_2C * 4(-C(-[:0]H) - C(-[:0]H) - H_2C -)}
+        
+        \chemfig{() * 4 (- () = () - () - () -)}
+        
+        \chemfig{H -[:60] C * 6 (= C(- H) - CH_2 - C(- H_2) - C(- H_2) - H_2C -)}
+        
+        \chemfig{[:30]() * 6 (= () - () - () - () - () -)}
+        
+        \title{3}{Nomeclaturas Usuais de Alguns Aromáticos}
+        
+        \title{3}{Atividade}
+        
+        Forneça a nomeclatura segundo a IUPAC para o composto a seguir:
+        
+        \chemfig{[:90]() * 6 (- () = () - () = ()(- CH_3) - () =)}
+        Metilbenzeno
+        
+        \chemfig{()(-[:180]CH_3) * 6 (= () - () = ()(-[:0] CH_3) - () = () -)}
+        1,4-dimetilbenzeno
+        
+        \title{2}{Representação Estrutural dos Hidrocarbonetos e Aplicabilidade}
+        
+        \title{3}{Fórmula Estrutural Plana}
+        
+        É a representação que mostra todos os átomos e todas as ligações presentes na molécula, pois apresenta a disposição ou arranjo dos átomos dentro de uma molécula. Exemplo:
+        
+        \chemfig{
+              H
+            - C(-[:90] H) (-[:-90] H)
+            - C(-[:90] C(-[:45] H) (-[:90] H) (-[:135] H)) (-[:-90] C(-[:-45] H) (-[:-90] H) (-[:-135] H))
+            - C(-[:90] H)(-[:-90] H)
+            - C(-[:90] H)(-[:-90] C(-[:-45] H)(-[:-90] H) (-[:-135] H))
+            - C(-[:90] H) (-[:-90] H)
+            - H
+        }
+        
+        Para esta representação, a quantidade de hidrogênios é abreviada. Exemplo:
+        
+        \chemfig{H_3C - C(-[:90] CH_3)(-[:-90] CH_3) - CH_2 - CH(-[:-90] CH_3) - CH_3}
+        
+        Trata-se da fórmula que infica o número de átomos de cada elemento em uma molécula das substâncias.
+        
+        \chemfig{H_3C - C(-[:90]CH_3)(-[:-90]CH_3) - CH_2 - CH(-[:-90]CH_3) - CH_3}
+        \hspace{12pt}
+        $C_{8}H_{18}$ --- Fórmula Molecular correspondente
+        
+        Fórmula estrutural plana simplificada ou condensada
+        
+        Assim, para determinar a fórmula molecular desse composto, basta contar a quantidade de átomos de cada elemento e colocar um índice do lado inferior direito do elemento em questão. Exemplos de Fórmula estrutural simplificada ou condensada e fórmula molecular, respectivamente:
+        
+        \begin{tabular}{r c}
+            \chemfig{CH_3 - CH_3}             & $C_{2}H_{6}$ \\
+            \chemfig{CH_3 - CH_2 - CH_3}      & $C_{3}H_{8}$ \\
+            \chemfig{CH_2 = CH - CH_2 - CH_3} & $C_{4}H_{8}$
+        \end{tabular}
+        
     \end{day}
 \end{document}

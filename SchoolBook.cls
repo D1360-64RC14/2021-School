@@ -1,6 +1,18 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{SchoolBook}[2021/04/21 - Created during quarentine to online studying]
 
+% ================= Comandos Disponíveis =================
+% -- \heading{<int>}{<string>}
+% -- -- Formatação do tamanho do texto. Partindo do nível 1 (maior)
+% -- -- Agumentos:
+% -- -- -- #1 <int>    : Nível do heading. 1..6;
+% -- -- -- #2 <string> : Texto a ser formatado.
+%
+% -- \title{<int>}{<string>}
+% 
+% ========================================================
+
+
 \LoadClass[12pt]{article}
 
 \RequirePackage{geometry}
@@ -60,3 +72,5 @@
 \newcommand{\response}{
     \vspace{3pt}\newline\textbf{R:}
 }
+
+\newcommand{\colorx}[2]{{\color{#1}#2}}
