@@ -48,6 +48,7 @@
 \MakeOuterQuote{"}
 
 \renewenvironment{day}[1]{
+    \def\HEADER{#1}
     \newpage
     \fancyhf{}
     \rhead{\heading{5}{#1}}

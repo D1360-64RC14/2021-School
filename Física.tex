@@ -5,6 +5,10 @@
 \usepackage{amsmath}
 \usepackage{multicol}
 \usepackage{icomma}
+\usepackage{graphicx}
+
+
+\graphicspath{ {./Images/} }
 
 \begin{document}
     \begin{day}{22/04/2021}
@@ -233,8 +237,8 @@
         \begin{enumerate}
             \item[a)] 305°F em graus Celsius e Kelvin
             \response{Em:\\
-                Celsius: 151,67 °C \\
-                Kelvin: 424,67 K
+                \quad Celsius: 151,67 °C \\
+                \quad Kelvin: 424,67 K
             }
             
             \begin{multicols}{2}
@@ -260,8 +264,8 @@
             
             \item[b)] 100°C em graus Fahrenheit e Kelvin
             \response{Em:\\
-                Fahrenheit: 212 °F \\
-                Kelvin: 293 K
+                \quad Fahrenheit: 212 °F \\
+                \quad Kelvin: 293 K
             }
             
             \begin{multicols}{2}
@@ -287,7 +291,7 @@
             \end{multicols}
             
             \item[c)] 293K  em graus Celsius e Fahrenheit
-            \response{Em:\\
+            \response{Em: \\
                 Celsius: 20 °C \\
                 Fahrenheit: 68 °F
             }
@@ -314,8 +318,132 @@
                                                  F &= 68^\circ Fahrenheit
                 \end{align*}
             \end{multicols}
-            
         \end{enumerate}
     \end{day}
+    
+    \begin{day}{04/05/2021}
+        \title{3}{Dilatação Térmica}
+        
+        A esperiência mostra que os sólidos, ao sofrerem um aquecimento, se dilatam e, ao serem resfriados, se contraem.
+        
+        A dilatação ou a contração ocorrem em 3 dimensões: \textbf{comprimento, largura e espessura}.
+        
+        A essa variações nas dimensões de um sólido causada pelo aquecimento ou resfriamento denominamos \emph{dilatação térmica}. 
+        
+        \title{3}{Dilatação Linear}
+        
+        É aquela em que predomina a variação \textbf{em uma única dimensão}, ou seja, o comprimento.
+        
+        \begin{center}
+            \includegraphics[width=8cm]{Física_04-05-2021}
+        \end{center}
+        
+        Exemplos: dilatação em fios, cabos e barras.
+        
+        $$ \Delta L = L_i * \propto * ( T_F - T_i ) $$
+        
+        \vspace{6pt}
+        \begin{tabular}{ r c l }
+            $ \Delta L $ &=& Variação de comprimento;         \\
+                 $ L_i $ &=& Comprimento inicial;             \\
+             $ \propto $ &=& Coeficiente de Dilatação Linear; \\
+                 $ T_F $ &=& Temperatura Final;               \\
+                 $ T_i $ &=& Temperatura Inicial
+        \end{tabular}
+        
+        \vspace{6pt}
+        
+        O comprimento de um fio de alumínio é de 40m a 20°C. Sabendo-se que o fio é aquecido até 60°C e que o coeficiente de dilatação térmica linear do alumínio é de $24 * 10^{-6\circ} C^{-1}$, determinar:
+        
+        \begin{enumerate}
+            \item[a)] a dilatação do fio;
+            \response{A dilatação foi de 3,84 centímetros}
+            \begin{align*}
+                \Delta L &= 40 * (24 * 10^{-6}) * (60 - 20) \\
+                \Delta L &= 40 * 0,000024 * 40              \\
+                \Delta L &= 0,0384 m                        \\
+                \Delta L &= 3,84 cm            
+            \end{align*}
+            
+            \item[b)] o comprimento final do fio;
+            \response{O comprimento final do fio foi de 40,0384 metros}
+            \begin{align*}
+                L_F &= L_i + \Delta L \\
+                40,0384 &= 40 + 0,0384
+            \end{align*}
+        \end{enumerate}
+        
+        Uma barra de ferro tem comprimento 10m a 0°C. Sabendo que o coeficiente de dilatação linear do ferro é igual a $12 * 10^{-6\circ}C^{-1}$, calcule:
+        
+        \begin{enumerate}
+            \item[a)] o comprimento final da barra a 20°C;
+            \response{O comprimento final da barra é de 10,0024 metros}
+            \begin{multicols}{2}
+                \begin{align*}
+                    \Delta L &= 10 * (12 * 10^{-6}) * (20 - 0) \\
+                    \Delta L &= 10 * 0,000012 * 20             \\
+                    \Delta L &= 0,0024 m                       
+                \end{align*}
+                
+                \begin{align*}
+                     L_F &= L_i + \Delta L \\
+                     L_F &= 10 + 0,0024    \\
+                     L_F &= 10,0024 m
+                \end{align*}
+            \end{multicols}
+            
+            \item[b)] o comprimento final da barra a -30°C.
+            \response{O comprimento final da barra é de 9,994 metros}
+            \vspace{-24pt}
+            \begin{multicols}{2}
+                \begin{align*}
+                    \Delta L &= 10 * (12 * 10^{-6}) * -(20 - (-30)) \\
+                    \Delta L &= 10 * (12 * 10^{-6}) * -50           \\
+                    \Delta L &= 10 * 0,000012 * -50                 \\
+                    \Delta L &= -0,006                              \\
+                \end{align*}
+                
+                \begin{align*}
+                     L_F &= L_i + \Delta L \\
+                     L_F &= 10 + (-0,006)  \\
+                     L_F &= 9,994 m
+                \end{align*}
+            \end{multicols}
+        \end{enumerate}
+        
+        Uma barra de alumínio passando de 15°C a 100°C alonga-se 1,224mm. Calcule o comprimento inicial dessa barra. Dado: $\alpha_{Al} = 24 * 10^{-6\circ}C^{-1}$.
+        \response{O comprimento inicial dessa barra era de 600mm}
+        \begin{align*}
+                    1,224 &= L_i * (24 * 10^{-6}) * (100 - 15) \\
+                    1,224 &= L_i * 0,000024 * 85               \\
+                    1,224 &= L_i * 0,00204                     \\
+            L_i * 0,00204 &= 1,224                             \\
+                      L_i &= \frac{1,224}{0,00204}             \\
+                      L_i &= 600 mm
+        \end{align*}
+        
+        A que temperatura deve encontrar-se uma trena de aço para que seu comprimento seja 0,5mm maior do que o comprimento de 2000 mm que ela possui à temperatura de 0°C? O coeficiente de dilatação linear do aço vale $1,0 * 10^{-5\circ}C^{-1}$.
+        \response{A temperatura deve ser de 25°C}
+        \begin{align*}
+                         0,5 &= 2000 * (1,0 * 10^{-5}) * (T_F - 0) \\
+                         0,5 &= 2000 * 0,00001 * (T_F - 0)         \\
+                         0,5 &= 0,02 * (T_F - 0)                   \\
+            0,02 * (T_F - 0) &= 0,5                                \\
+                   (T_F - 0) &= \frac{0,5}{0,02}                   \\
+                     T_F - 0 &= 25                                 \\
+                         T_F &= 25 + 0                             \\
+                         T_F &= 25^\circ C
+        \end{align*}
+    \end{day}
 \end{document}
+
+
+
+
+
+
+
+
+
+
 
