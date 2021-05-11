@@ -1,0 +1,71 @@
+\documentclass{SchoolBook}
+
+\usepackage{array}
+\usepackage{lipsum}
+\usepackage[normalem]{ulem}
+
+%\setname{Diego Garcia}
+%\setclass{3º FD}
+%\setnumber{07}
+
+%\addline{Conteúdo 1}{Lugar Tal}{01/01/2021}{5H}
+%\addline{Conteúdo 2}{Lugar Tal}{01/02/2021}{5H}
+%\addline{Conteúdo 3}{Lugar Tal}{01/03/2021}{5H}
+%\addline{Conteúdo 4}{Lugar Tal}{01/04/2021}{5H}
+%\addline{Conteúdo 5}{Lugar Tal}{01/05/2021}{5H}
+
+%\setfperson{Pessoa 1}
+%\setsperson{Pessoa 2}
+
+%\setenddate{01/06/2021}
+
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}}
+
+\newcommand{\addline}[4]{
+    \hline
+    #1 & #2 & #3 & #4 &  \\
+}
+\newcommand{\addtitle}[5]{
+    \hline
+    \bf\centering#1 & \bf\centering#2 & \bf#3 & \bf#4 & \bf#5 \\
+}
+
+\newcommand{\namebar}[3]{
+    \begin{tabular}{ L{1.3cm} L{7cm} L{0.2cm} C{0.7cm} L{0.7cm} L{4cm} }
+        \textbf{Aluno(a)}: & \uline{      #1\hfill} &
+        \textbf{Nº}:       & \uline{\hfill#2\hfill} &
+        \textbf{Série}:    & \uline{      #3\hfill}
+    \end{tabular}
+}
+
+\newenvironment{chtable}{
+    \begin{center}
+        \begin{tabular}{ | L{7cm} | L{3cm} | C{2.3cm} | C{1.5cm} | C{2cm} | }
+}{
+        \hline
+        \end{tabular}
+    \end{center}
+}
+
+\begin{document}
+    \centering
+    Curso de Formação de Docentes da Educação Infantil e dos Anos Iniciais do Ensino Fundamental, em Nível Médio, na Modalidade Normal -- Integrado.\vspace{6pt}
+    
+    \underline{\bf
+        FICHA DE ACOMPANHAMENTO DE PRÁTICA DE FORMAÇÃO
+    }\vspace{12pt}
+    
+    \namebar{Diego Garcia Perez Biguette}{10}{3º FD}
+    \vspace{-6pt}
+    \begin{chtable}
+        \addtitle{Conteúdo/Atividades}{Local}{Data}{Total de H/A}{Ass. do Profº}
+        \addline{\lipsum[1][1-1]}{Colégio Estadual Santos Dumont}{01/02/2021}{5H}
+        \addline{Conteúdo 3}{Lugar Tal}{01/03/2021}{5H}
+    \end{chtable}
+\end{document}
+
+
+
+
+

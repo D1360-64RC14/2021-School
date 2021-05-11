@@ -27,13 +27,13 @@
 \RequirePackage{enumitem}
 
 \geometry{
-    layout=a4paper, %      A4 Paper        %
-    lmargin=0.75in, %    Left Margin       %
-    rmargin=0.75in, %   Right Margin       %
-    tmargin=1in,    %     Top Margin       %
-    bmargin=1.5in,  %  Bottom Margin       %
-    headsep=0.2in,  %  Header Separation   %
-    footskip=0pt,   %  Footer Skipping     %
+    layout  = a4paper, %      A4 Paper       %
+    lmargin = 0.75in,  %    Left Margin      %
+    rmargin = 0.75in,  %   Right Margin      %
+    tmargin = 1.00in,  %     Top Margin      %
+    bmargin = 1.50in,  %  Bottom Margin      %
+    headsep = 0.20in,  %  Header Separation  %
+    footskip= 0.00pt,  %  Footer Skipping    %
 }
 
 \setmainfont{Calibri}
@@ -45,10 +45,11 @@
 \parindent=24pt
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
+
 \MakeOuterQuote{"}
+\DeclareMathSymbol{*}{\mathbin}{symbols}{1}
 
 \renewenvironment{day}[1]{
-    \def\HEADER{#1}
     \newpage
     \fancyhf{}
     \rhead{\heading{5}{#1}}
