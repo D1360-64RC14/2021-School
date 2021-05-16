@@ -14,15 +14,15 @@
         
         \textbf{Ciclenos}: são hidrocarbonetos de cadeia cíclica ou fechada com ligação dupla entre os átomos de carbono. Exemplos:
         
-        \chemfig{H -[:53] C * 5 (=[:0]C(-) - C(-[:-45]H)(-[:45]H) - C(-[:45]H)(-[:135]H) - C(-[:225]H)(-[:135]H) - C(-H)(-H))}
+        \chemfig{H -[:53] C ** 5 (=[:0]C(-) - C(-[:-45]H)(-[:45]H) - C(-[:45]H)(-[:135]H) - C(-[:225]H)(-[:135]H) - C(-H)(-H))}
         
         \chemfig{[:18]() * 5 (= () - () - () - () -)}
         
-        \chemfig{H_2C * 4(-C(-[:0]H) - C(-[:0]H) - H_2C -)}
+        \chemfig{H_2C ** 4(-C(-[:0]H) - C(-[:0]H) - H_2C -[,,2])}
         
         \chemfig{() * 4 (- () = () - () - () -)}
         
-        \chemfig{H -[:60] C * 6 (= C(- H) - CH_2 - C(- H_2) - C(- H_2) - H_2C -)}
+        \chemfig{H -[:60] C ** 6 (= C(- H) - CH_2 - C(- H_2) - C(- H_2) - H_2C -)}
         
         \chemfig{[:30]() * 6 (= () - () - () - () - () -)}
         
@@ -62,17 +62,74 @@
         
         \chemfig{H_3C - C(-[:90]CH_3)(-[:-90]CH_3) - CH_2 - CH(-[:-90]CH_3) - CH_3}
         \hspace{12pt}
-        $C_{8}H_{18}$ --- Fórmula Molecular correspondente
+        \chemfig{C_{8}H_{18}} --- Fórmula Molecular correspondente
         
         Fórmula estrutural plana simplificada ou condensada
         
         Assim, para determinar a fórmula molecular desse composto, basta contar a quantidade de átomos de cada elemento e colocar um índice do lado inferior direito do elemento em questão. Exemplos de Fórmula estrutural simplificada ou condensada e fórmula molecular, respectivamente:
         
         \begin{tabular}{r c}
-            \chemfig{CH_3 - CH_3}             & $C_{2}H_{6}$ \\
-            \chemfig{CH_3 - CH_2 - CH_3}      & $C_{3}H_{8}$ \\
-            \chemfig{CH_2 = CH - CH_2 - CH_3} & $C_{4}H_{8}$
+            \chemfig{CH_3 - CH_3}             & \chemfig{C_{2}H_{6}} \\
+            \chemfig{CH_3 - CH_2 - CH_3}      & \chemfig{C_{3}H_{8}} \\
+            \chemfig{CH_2 = CH - CH_2 - CH_3} & \chemfig{C_{4}H_{8}}
         \end{tabular}
         
+    \end{day}
+    
+    \begin{day}{13/05/2021}
+        \title{3}{Representação dos Hidrocarbonetos}
+        
+        Uma das primeiras observações na Química Orgânica são as diferentes maneiras que podemos representar uma mesma molécula.
+        
+        \begin{center}
+            \begin{tabular}{c l}
+                \chemfig{() -[:30] () -[:-30] () -[:30] () -[:-30] ()} & Bastão \\[24pt]
+                \chemfig{C(-[:180] H)(-[:90] H)(-[:-90] H) - C(-[:90] H)(-[:-90] H) - C(-[:90] H)(-[:-90] H) - C(-[:90] H)(-[:-90] H) - C(- H)(-[:90] H)(-[:-90] H)} & Estrutural Plana \\[50pt]
+                \chemfig{H_3C - CH_2 - CH_2 - CH_2 - CH_3} & Estrutural Condensada/Simplificada \\[24pt]
+                \chemfig{C_5H_{12}} & Fórmula Molecular
+            \end{tabular}
+        \end{center}
+        
+        \title{3}{Fórmula em Perspectiva}
+        
+        \begin{center}
+            \begin{tabular}{c l}
+                \chemfig{H - H} & No Plano \\
+                \chemfig{H > H} & Para Trás \\
+                \chemfig{H >: H} & Para Frente
+            \end{tabular}
+        \end{center}
+        
+        \title{3}{Exemplo}
+        \begin{center}
+            \chemfig{OH -[:30] () -[:-30] () (<[:-150] H) (<:[:-80] OH) -[:30] () (<[:120] H) (<:[:60] OH) -[:-20] () =[:20] O}
+        \end{center}
+        
+        \title{3}{Atividade}
+        
+        A substância responsável pelo sabor característico da laranja apresenta a seguinte estrutura simplificada:
+        
+        \chemfig[atom sep=2em]{O(-[:90] C(-[:-180] C) =[:90] O) - C - C - C - C - C - C - C - C}
+        
+        \begin{enumerate}
+            \item[a)] Qual é o número de átomos de hidrogênio presentes em uma molécula dessa substância?
+            \response{20 hidrogênios}
+            
+            \item[b)] Qual a fórmula molecular dessa substância?
+            \response{\chemfig{H_{20}C_9O_2}}
+            
+            \item[c)] Essa molécula possui algum heteroátomo? 
+            \response{Sim.}
+        \end{enumerate}
+        
+        A metformina é um antidiabético que pertence à classe de remédios chamados de biguanidas -- agentes utilizados como hipoglicemiantes -- ou seja, eles são capazes de reduzir/controlar a concentração de glicose na corrente sanguínea. A fórmula estrutural deste fármaco está representada a seguir.
+        
+        \vspace{12pt}
+        \heading{2}{\chemfig[atom sep=2em, bond style={line width=1pt},bond join=true]
+        {H_3C -[:30] N(-[:-90] CH_3) -[:-30] ()(-[:90] NH_2) =^[:30] N -[:-30] ()(=[:90] NH) -[:30] NH_2}}
+        \vspace{12pt}
+        
+        \noindent Determine a fórmula molecular.
+        \response{\chemfig{H_{11}C_4N_5}}
     \end{day}
 \end{document}
