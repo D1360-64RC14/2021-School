@@ -6,8 +6,16 @@
 \usepackage{multicol}
 \usepackage{icomma}
 \usepackage{graphicx}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
 
 \graphicspath{ {./Images/} }
+
+\tikzset{
+  jumpdot/.style={mark=*,solid},
+  excl/.append style={jumpdot,fill=white},
+  incl/.append style={jumpdot,fill=black},
+}
 
 \begin{document}
     \begin{day}{22/04/2021}
@@ -528,7 +536,300 @@
             \end{align*}
         \end{enumerate}
     \end{day}
+    
+    \begin{day}{17/05/2021}
+        \title{2}{Calorimeria}
+        \title{3}{Unidades de Quantidade de Calor}
+        
+        Antes mesmo que o calor fosse reconhecido como forma de energia, as medidas de quantidade de calor eram feitas através das variações de temperatura que os corpos sofriam quando se lhes fornecia energia sob forma de calor.
+        
+        Assim, estabeleceu-se como \emph{unidade de quantidade de calor} a caloria (Cal).
+        
+        No sistema internacional de unidades (SI), a unidade de quantidade de calor é o Joule (J).
+        
+        $$ 1\;Cal = 4,186\;Joule $$
+        
+         Podemos utilizar também um múltiplo de caloria chamado quilo-caloria.
+         
+         $$ 1\;Kcal = 1000\;Cal $$
+         
+         \title{3}{Calor Sensível e Calor Latente}
+         
+         Um corpo, ao receber ou ceder calor, pode sofrer dois efeitos diferentes: \emph{variação de temperatura} ou \emph{mudança de fase}.
+         
+         A quantidade de calor recebida ou cedida por um corpo, ao sofrer uma \textbf{variação de temperatura} sem que haja mudança de fase, é denominado \textbf{calor sensível}.
+         
+         Se o corpo sofrer apenas uma \textbf{mudança de fase} sem haver variação de temperatura, o calor é chamado \textbf{latente}.
+         
+         \title{3}{Calor Específico}
+         
+         A experiência mostra que cada substância necessita de uma quantidade de calor diferente para que 1 grama dessa substância sofra variação de temperatura de 1 celsius.
+         
+         Essa quantidade é uma característica de cada substância é denominada \textbf{calor específico}, representado pela letra \textbf{c}.
+         
+         \title{3}{Capacidade Térmica de um Corpo}
+         
+         É o quociente entre a quantidade de calor ($Q$) recebido ou cedido por um corpo e a correspondente variação de temperatura ($\Delta t$).
+         
+         $$ C = \frac{Q}{\Delta t} $$
+         \begin{center}
+            ou
+         \end{center}
+         $$ C = m * c $$
+         A unidade de capacidade térmica é $cal/^\circ C$
+         
+    \end{day}
+    
+    \begin{day}{18/05/2021}
+        \title{4}{Equação Fundamental da Calorimetria}
+        
+        $$ Q = m * c * (T_f - T_i) $$
+        \begin{center}
+            ou
+        \end{center}
+        $$ Q = m * c * \Delta t $$
+        
+        \vspace{6pt}
+        \begin{tabular}{ r c l }
+                   $ Q $ &=& Quantidade de calor;       \\
+                   $ m $ &=& Corpo de massa (em grama); \\
+                   $ c $ &=& Calor específico;          \\
+                 $ T_F $ &=& Temperatura Final;         \\
+                 $ T_i $ &=& Temperatura Inicial;       \\
+            $ \Delta t $ &=& Diferença de Temperatura 
+        \end{tabular}
+        \vspace{6pt}
+        
+        \title{3}{Atividades}
+        
+        \begin{enumerate}
+            \item[1.] Um bloco de ferro com massa de 600 gramas está a uma temperatura de 20°C. O calor específico do ferro é igual a $ 0,114\;cal/g\;^\circ C $.
+            \begin{enumerate}
+                \item[a)] Qual a quantidade de calor que o bloco deve receber para que sua temperatura passe de 20°C a 50°C?
+                \begin{align*}
+                    Q &= m * c * (T_f - T_i)     \\
+                    Q &= 600 * 0,114 * (50 - 20) \\
+                    Q &= 600 * 0,114 * 30        \\
+                    Q &= 68,4 * 30               \\
+                    Q &= 2052\;cal
+                \end{align*}
+                
+                \item[b)] Qual a quantidade de calor que o bloco deve ceder para que sua temperatura varie de 20°C a -5°C?
+                \begin{align*}
+                    Q &= m * c * (T_f - T_i)       \\
+                    Q &= 600 * 0,114 * ((-5) - 20) \\
+                    Q &= 600 * 0,114 * -25         \\
+                    Q &= 68,4 * -25                \\
+                    Q &= -1710\;cal
+                \end{align*}
+                
+            \end{enumerate}
+            
+            \item[2.] Sabendo que 1 cal é igual a 4,18 joule:
+            \begin{enumerate}
+                \item[a)] Tansforme 20 Kcal em Joules.
+                \begin{align*}
+                    j_{oule} &= 4,186 * cal   \\
+                    j_{oule} &= 4,186 * 20000 \\
+                    j_{oule} &= 83720\;joules 
+                \end{align*}
+                
+                \item[b)] Transforme 8000 J em Calorias.
+                \begin{align*}
+                    cal &= \frac{j_{oule}}{4,186} \\
+                    cal &= \frac{8000}{4,186}     \\
+                    cal &= 1911,13\;cal
+                \end{align*}
+                
+                \item[c)] Um bloco de cobre com 200 grama sofre um aquecimento de 25°C para 70°C. O calor específico do cobre é igual a $ 0,093\;cal/g\;^\circ C $.
+                \begin{enumerate}
+                    \item[I.] Qual a quantidade de calor recebida pelo bloco?
+                    \begin{align*}
+                        Q &= 200 * 0,093 * (70 - 25) \\
+                        Q &= 200 * 0,093 * 45        \\
+                        Q &= 18,6 * 45               \\
+                        Q &= 837\;cal
+                    \end{align*}
+                    
+                    \item[II.] Determine a capacidade térmica do bloco.
+                    \begin{align*}
+                        C &= m * c               \\
+                        C &= 200 * 0,093         \\
+                        C &= 18,6\;cal/^\circ\;C \\[6pt]
+                        C &= \frac{Q}{\Delta t}  \\
+                        C &= \frac{837}{70 - 25} \\
+                        C &= \frac{837}{45}      \\
+                        C &= 18,6\;cal
+                    \end{align*}
+                \end{enumerate}
+            \end{enumerate}
+        \end{enumerate}
+    \end{day}
+    
+    \begin{day}{24/05/2021}
+        \begin{enumerate}
+            \item[3.] Determine quantas calorias perderá 1kg de água para que sua temperatura varie de 60°C para 10°C. O calor específico da água é igual a $ 1\;cal/g^\circ\;C $.
+            \begin{align*}
+                Q &= m * c * (T_f - T_i)    \\
+                Q &= 1000 * 1 * (10 - 60)   \\
+                Q &= 1000 * -50             \\
+                Q &= -50000\;cal = -50\;Kcal
+            \end{align*}
+            
+            \item[4.] Sabendo que o calor específico do ferro é de aproximadamente $ 0,1\;cal/g^\circ\;C $, calcule a quantidade de calor para elevar 15°C a temperatura de um pedaço de 80g desse material.
+            \begin{align*}
+                Q &= 80 * 0,1 * \Big((T_i + 15) - T_i\Big)  & Q &= 80 * 0,1 * 15 \\
+                Q &= 8 * \Big((T_i + 15) - T_i\Big)         & Q &= 120\;cal      \\
+                Q &= \Big(8 * (T_i + 15)\Big) - (8 * T_i)   \\
+                Q &= \Big((8 * T_i) + (8 * 15)\Big) - 8 T_i \\
+                Q &= 8T_i + 120 - 8T_i                      \\
+                Q &= (8T_i - 8T_i) + 120                    \\
+                Q &= 120\;cal
+            \end{align*}
+            
+            \item[5.] Um corpo de massa igual a 1 kg recebeu 10000 cal e sua temperatura passou de 50°C para 100°C. Qual o calor específico desse corpo?
+            \begin{align*}
+                     10000 &= 1000 * c * (100 - 50) \\
+                     10000 &= 1000 * c * 50         \\
+                     10000 &= 50000 * c             \\
+                 50000 * c &= 10000                 \\
+                         c &= \frac{10000}{50000}   \\
+                         c &= 0,2\;cal/g^\circ\;C
+            \end{align*}
+        \end{enumerate}
+    \end{day}
+    
+    \begin{day}{25/05/2021}
+        \begin{enumerate}
+            \item[6.] O calor específico do ferro é igual a $ 0,110\;cal/g^\circ\;C $. Determine a temperatura final de uma massa de 400 grama de ferro á temperatura de 20°C, após ter cedido 500 cal.
+            \begin{align*}
+                -500 &= 400 * 0,110 * (T_f - 20) \\
+                -500 &= 44 * (T_f - 20) \\
+                -500 &= (44 T_f) - (44 * 20) \\
+                -500 &= 44 T_f - 880 \\
+                44 T_f - 880 &= -500 \\
+                44 T_f &= -500 + 880 \\
+                44 T_f &= 380 \\
+                T_f &= \frac{380}{44} \\
+                T_f &= 8,636363636^\circ\;C
+            \end{align*}
+            
+            \item[7.] O gráfico representa o aquecimento de 100 grama de uma substância.
+            
+            \begin{center}
+                \begin{tikzpicture}
+                    \begin{axis}[
+                        grid, grid style=dashed,
+                        xlabel={Q (cal)},
+                        ylabel={t (°C)},
+                        xtick={0,10,20,30,40,50,60,70,80,90},
+                        ytick={0,10,20,20,30,40,50},
+                        ymin=0, ymax=50,
+                        xmin=0, xmax=90,
+                        width=10cm,
+                        height=6cm,
+                        ymajorgrids,
+                        xmajorgrids,
+                        axis lines=middle,
+                        extra x ticks={0},
+                        extra y ticks={0},
+                        x label style={right},
+                        y label style={above},
+                        %axis on top
+                    ]
+                        \addplot[
+                            color=black,
+                            jumpdot,
+                            thick, 
+                        ] coordinates {(0,20)(90,50)};
+                    \end{axis}
+                \end{tikzpicture}
+            \end{center}
+            \begin{enumerate}
+                \item[a)] qual o calor específico da substância?
+                \begin{align*}
+                    90 &= 100 * c * (50 - 20) \\
+                    90 &= 100 * c * 30 \\
+                    90 &= 3000c \\
+                    3000c &= 90 \\
+                    c &= \frac{90}{3000} \\
+                    c &= 0,03\;cal/g^\circ\;C
+                \end{align*}
+                
+                \item[b)] qual a capacidade térmica da substância?
+                \begin{align*}
+                    C &= m * c \\
+                    C &= 100 * 0,03 \\
+                    C &= 3\;cal/^\circ\;C
+                \end{align*}
+            \end{enumerate}
+        \end{enumerate}
+        
+        \title{3}{Princípio da Igualdade das Trocas de Calor}
+        
+        Quando dois ou mais corpos com temperaturas diferentes são colocados próximos um do outro ou em contato, eles trocam calor entre si até atingir o equilíbrio térmico.
+        
+        Se o sistema não trocar energia com o ambiente, isto é, se for termicamente isolado.
+        
+        Note que a quantidade de calor cedida por A é igual, em valor absoluto, à quantidade de calor recebida por B.
+        
+        Se tivermos $n$ corpos, teremos:
+        $$ Q_1 + Q_2 + Q_3 + \dots + Q_n = 0 $$
+        
+        Uma xicara de 50g está a 34°C, coloca-se nela 250g de água a 100°C. Verifica-se que no equilíbrio térmico a temperatura é de 94°C, adimitindo que só haja troca de calor entre xícara e a água. Determinar o calor específico da xicara dado: $C_{agua} = 1\;cal/g^\circ\;C$.
+        \begin{center}
+            \vspace{6pt}
+            \begin{tabular}{|c|c|c|c|c|}\hline
+                       & m   & c & $T_f$ & $T_i$ \\\hline
+                Xícara & 50  & c & 94    & 34    \\\hline
+                Água   & 250 & 1 & 94    & 100   \\\hline
+            \end{tabular}
+        \end{center}
+    \end{day}
+    
+    \begin{day}{31/05/2021}
+        \begin{align*}
+            (m_{xicara} * c_{xicara} * \Delta T_{xicara}) + (m_{agua} * c_{agua} * \Delta T_{agua}) &= 0 \\
+            \Big(50 * c * (94 - 34)\Big) + \Big(250 * 1 * (94 - 100)\Big) &= 0 \\
+            (50 * c * 60) + (250 * 1 * -6) &= 0 \\
+            3000c + −1500 &= 0 \\
+            3000c &= 0 + 1500 \\
+            3000c &= 1500 \\
+            c &= \frac{1500}{3000} \\
+            c &= 0,5\;cal/g^\circ\;C
+        \end{align*}
+        
+        Um calorímetro de capacidade térmica $8\;cal/^\circ\;C$ contém 120 g de água a 15°C. Um corpo de massa $x$ gramas e temperatura 60°C é colocado no interior do calorímetro. Sabendo-se que o calor específico do corpo é de $0,22\;cal/g^\circ\;C$ e que a temperatura de equilíbrio térmico é de 21,6°C , calcular $x$.
+        
+        \begin{center}
+            \vspace{6pt}
+            \begin{tabular}{|c|c|c|c|c|}\hline
+                            & m   & c    & $T_f$ & $T_i$ \\\hline
+                Calorímetro & \multicolumn{2}{|c|}{8} & 21,6  & 15    \\\hline
+                Água        & 120 & 1    & 21,6  & 15    \\\hline
+                Corpo       & x   & 0,22 & 21,6  & 60    \\\hline
+            \end{tabular}
+        \end{center}
+        
+        \begin{align*}
+            \Big(8 * (25,6 - 15)\Big) +
+            \Big(120 * 1 * (21,6 - 15)\Big) +
+            \Big(x * 0,22 * (21,6 - 60)\Big) &= 0 \\
+            (8 * 10,6) +
+            (120 * 1 * 6,6) +
+            (0,22x * -38,4) &= 0 \\
+            (8 * 10,6) +
+            (120 * 1 * 6,6) +
+            (0,22x * -38,4) &= 0 \\
+            84,8 + 792 + -8,448x &= 0 \\
+            876,8 + -8,448x &= 0 \\
+            -8,448x &= 0 - 876,8 \\
+            x &= \frac{-876,8}{-8,448} \\
+            x &= 103,787878788
+        \end{align*}
+    \end{day}
 \end{document}
+
 
 
 

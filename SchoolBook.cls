@@ -12,7 +12,6 @@
 % 
 % ========================================================
 
-
 \LoadClass[12pt]{article}
 
 \RequirePackage{geometry}
@@ -21,10 +20,14 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{fontspec}
-\RequirePackage[autostyle=false, style=english]{csquotes}
 \RequirePackage{hyperref}
 \RequirePackage{enumerate}
 \RequirePackage{enumitem}
+\RequirePackage[
+    autostyle  = true,
+    style      = english,
+    portuguese = brazilian
+]{csquotes}
 
 \geometry{
     layout  = a4paper, %      A4 Paper       %
@@ -74,5 +77,12 @@
 \newcommand{\response}{
     \vspace{3pt}\newline\textbf{R:}
 }
+\let\LASTITEM\item
+\newcommand{\itemc}[1][]{
+    \LASTITEM[\bf #1] \bf
+}
 
+\renewcommand{\item}{
+    \normalfont\LASTITEM
+}
 \newcommand{\colorx}[2]{{\color{#1}#2}}
