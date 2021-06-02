@@ -23,6 +23,7 @@
 \RequirePackage{hyperref}
 \RequirePackage{enumerate}
 \RequirePackage{enumitem}
+\RequirePackage{xcolor}
 \RequirePackage[
     autostyle  = true,
     style      = english,
