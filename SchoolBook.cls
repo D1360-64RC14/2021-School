@@ -24,6 +24,7 @@
 \RequirePackage{enumerate}
 \RequirePackage{enumitem}
 \RequirePackage{xcolor}
+\RequirePackage[normalem]{ulem}
 \RequirePackage[
     autostyle  = true,
     style      = english,
@@ -87,3 +88,12 @@
     \normalfont\LASTITEM
 }
 \newcommand{\colorx}[2]{{\color{#1}#2}}
+
+% WIP
+%\newcommand{\placehere}[1][none]{
+%    \if#1none
+%        \uline{\hspace{2cm}}
+%    \else
+%        \textbf{\it #1}
+%    \fi
+%}
