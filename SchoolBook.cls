@@ -20,7 +20,15 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{fontspec}
-\RequirePackage{hyperref}
+\RequirePackage[
+    colorlinks=true,
+    linkcolor=webref,
+    filecolor=red,
+    urlcolor=webref,
+    linkbordercolor={0 0 0},
+    urlbordercolor={0 0 0},
+    filebordercolor={0 0 0}
+]{hyperref}
 \RequirePackage{enumerate}
 \RequirePackage{enumitem}
 \RequirePackage{xcolor}
@@ -42,6 +50,8 @@
 }
 
 \setmainfont{Calibri}
+
+\definecolor{webref}{RGB}{0,0,180}
 
 % \hypersetup{
 %     bookmarks=true
