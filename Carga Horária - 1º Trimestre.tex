@@ -1,0 +1,129 @@
+\documentclass{SchoolBook}
+
+\usepackage{array}
+\usepackage{lipsum}
+\usepackage[normalem]{ulem}
+
+%%%% Schema %%%%
+%\setname{Diego Garcia}
+%\setclass{3º FD}
+%\setnumber{07}
+
+%\addline{Conteúdo 1}{Lugar Tal}{01/01/2021}{5H}
+%\addline{Conteúdo 2}{Lugar Tal}{01/02/2021}{5H}
+%\addline{Conteúdo 3}{Lugar Tal}{01/03/2021}{5H}
+%\addline{Conteúdo 4}{Lugar Tal}{01/04/2021}{5H}
+%\addline{Conteúdo 5}{Lugar Tal}{01/05/2021}{5H}
+
+%\setfperson{Pessoa 1}
+%\setsperson{Pessoa 2}
+
+%\setenddate{01/06/2021}
+
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}}
+
+\newcommand{\addline}[4]{
+    \hline
+    #1 & #2 & #3 & #4 &  \\
+}
+\newcommand{\addtitle}[5]{
+    \hline
+    \bf\centering#1 & \bf\centering#2 & \bf#3 & \bf#4 & \bf#5 \\
+}
+
+\newcommand{\namebar}[3]{
+    \begin{tabular}{ L{1.3cm} L{7cm} L{0.2cm} C{0.7cm} L{0.7cm} L{4cm} }
+        \textbf{Aluno(a)}: & \uline{      #1\hfill} &
+        \textbf{Nº}:       & \uline{\hfill#2\hfill} &
+        \textbf{Série}:    & \uline{      #3\hfill}
+    \end{tabular}
+}
+
+\newenvironment{chtable}{
+    \begin{center}
+        \begin{tabular}{ | L{7cm} | L{3cm} | C{2.3cm} | C{1.5cm} | C{2cm} | }
+}{
+        \hline
+        \end{tabular}
+    \end{center}
+}
+
+\newcommand{\maketotal}[1]{
+    \hline\vspace{3pt}
+    \centering\textbf{TOTAL DE HORAS/AULAS} &  &  & #1 &  \\[3pt]
+}
+
+\newcommand{\COLEGIOSD}{Colégio Estadual Santos Dumont}
+\newcommand{\EAD}{E.A.D.}
+
+\newcommand{\makefooter}[3]{
+    \fancyfoot[C]{
+        São Tomé, \uline{#1} de \uline{#2} de \uline{#3} \\[3pt]
+        \hspace{1cm} Professor(a): \uline{Teste} \hfill Coordenador(a): \uline{Lorem ipsum dolor sit amet} \hspace{1cm}
+    }
+}
+
+\begin{document}
+    \pagestyle{fancy}
+    \fancyhf{}
+    \centering
+    Curso de Formação de Docentes da Educação Infantil e dos Anos Iniciais do Ensino Fundamental, em Nível Médio, na Modalidade Normal -- Integrado.\vspace{6pt}
+    
+    \underline{\bf
+        FICHA DE ACOMPANHAMENTO DE PRÁTICA DE FORMAÇÃO
+    }\vspace{12pt}
+    
+    \namebar{Diego Garcia Perez Biguette}{07}{3º FD}
+    \vspace{-6pt}
+    \begin{chtable}
+        \addtitle{Conteúdo/Atividades}{Local}{Data}{Total de H/A}{Ass. do Profº}
+
+        \addline{Função social e cultural da escola.}
+                {\EAD}{23/02/2021}{5H}
+
+        \addline{Pressupostos teóricos e metodológicos da disciplina.}
+                {\EAD}{02/03/2021}{5H}
+
+        \addline{Concepção de infância, família e educação.}
+                {\EAD}{09/03/2021}{5H}
+
+        \addline{Fundamentos da Educação Infantil.}
+                {\EAD}{16/03/2021}{5H}
+
+        \addline{Fundamentos da Educação Infantil.}
+                {\EAD}{23/03/2021}{5H}
+
+        \addline{Desenvolvimento na infância de 0 a 3 anos / contação de história.}
+                {\EAD}{30/03/2021}{5H}
+                
+        \addline{Estudo do planejamento e conhecimento das fases da criança.}
+                {\EAD}{06/04/2021}{5H}
+                
+        \addline{Produção de planejamento e trabalo avaliativo.}
+                {\EAD}{13/04/2021}{5H}
+                
+        \addline{O trabalho pedagógico com a criança da educação infantil.}
+                {\EAD}{20/04/2021}{5H}
+                        
+        \addline{A relação entra a família e a escola.}
+                {\EAD}{27/04/2021}{5H}
+                
+        \addline{Planejamento na educação infantil.}
+                {\EAD}{04/05/2021}{5H}
+                        
+        \addline{Reflexão sobre a prática pedagógica na educação infantil.}
+                {\EAD}{11/05/2021}{5H}
+                        
+        \addline{Reflexão sobre a práxis pedagógica.}
+                {\EAD}{18/05/2021}{5H}
+
+        \maketotal{ }
+    \end{chtable}
+    \makefooter{DIA}{MÊS}{ANO}%{PROF ESTÁGIO}{COORDENADORA ESTÁGIO}
+\end{document}
+
+
+
+
+

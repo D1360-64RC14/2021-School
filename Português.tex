@@ -3,6 +3,9 @@
 \usepackage{enumitem}
 \usepackage{multicol}
 \usepackage{xcolor}
+\usepackage{tikz}
+
+\setlength{\parskip}{3pt}
 
 \begin{document}
     \begin{day}{22/04/2021}
@@ -144,7 +147,136 @@
         \end{itemize}
     \end{day}
     
-    \begin{day}{11/06/2021}
+    \begin{day}{18/06/2021}
+        \title 3 {O que é artigo de opinião?}
         
+        Texto dissertativo, em que o autor expõe seu posicionamento diante de algum tema atual e interesse de muitas pessoas.
+        
+        Geralmente escrito por espeialistas e profissionais com muita experiência no assunto.
+        
+        \vspace{16pt}
+        \begin{tikzpicture}\setmainfont{Latin Modern Roman}
+            % Change from white to gray to enable grid
+            \draw [very thin, white,step=1] (-8,0) grid (8,-4);
+           %\filldraw [fill=black] (0,0) circle [radius=1.5pt];
+            
+            \coordinate (textA) at (-3.5,-0.5);
+            \coordinate (textB) at (-3.5,-2.25);
+            \coordinate (textC) at (-3.5,-3.75);
+            
+            \coordinate (A) at (-2.4,-0.5);
+            \coordinate (B) at (-1.8,-2.25);
+            \coordinate (C) at (-2.5,-3.75);
+            
+            \node [align=center] at (textA) {Introdução     };
+            \node [align=center] at (textB) {Desenvolvimento};
+            \node [align=center] at (textC) {Conclusão      };
+            
+            \coordinate (textAa) at (3.5,0);
+            \coordinate (textAb) at (3.5,-0.5);
+            \coordinate (textAc) at (3.5,-1);
+            
+            \coordinate (Aa) at (1.8,0);
+            \coordinate (Ab) at (2.3,-0.5);
+            \coordinate (Ac) at (2.9,-1);
+            
+            \node [align=center] at (textAa) {Contextualização};
+            \node [align=center] at (textAb) {Problema        };
+            \node [align=center] at (textAc) {Tese            };
+            
+            \coordinate (textBa) at (3.5,-2);
+            \coordinate (textBb) at (3.5,-2.5);
+            
+            \coordinate (Ba) at (2.2,-2);
+            \coordinate (Bb) at (2.2,-2.5);
+            
+            \node [align=center] at (textBa) {Argumentos    };
+            \node [align=center] at (textBb) {Justificativas};
+            
+            \coordinate (textCa) at (3.5,-3.5);
+            \coordinate (textCb) at (3.5,-4);
+            
+            \coordinate (Ca) at (0.95,-3.5);
+            \coordinate (Cb) at (2.2,-4);
+            
+            \node [align=center] at (textCa) {Raciocínio Argumentativo};
+            \node [align=center] at (textCb) {Fechamento              };
+            
+            \draw [->,thick] (A) -- (Aa);
+            \draw [->,thick] (A) -- (Ab);
+            \draw [->,thick] (A) -- (Ac);
+            
+            \draw [->,thick] (B) -- (Ba);
+            \draw [->,thick] (B) -- (Bb);
+            
+            \draw [->,thick] (C) -- (Ca);
+            \draw [->,thick] (C) -- (Cb);
+        \end{tikzpicture}
+        \title 4 {Título}
+        
+        É a parte mais "vendedora" do texto. Deve dar água na boca, mas não pode entregar o outro! Dica: seja simples, brinque, use clichês. É importante usar verbos para dar comandos de ação.
+        
+        Lembre-se: a afirmação deve ser intrigante, mas absolutamente comprovável.
+        
+        \title 4 {Introdução}
+        
+        Inicie sua tese apresentando ao leitor a problemática a ser discutiva. Dica: sempre que possível, contextualize om o cenário global ou algum acontecimento do dia a dia do seu leitor-alvo.
+        
+        Mostre que você não está sozinho: inclua afirmações de outros pensadores ou cite estatísticas, estudos científicos, reportagens de importantes veículos de comunicação.
+        
+        Use no máximo dois parágrafos (se conseguir num só, perfeito!).
+        
+        \title 4 {Desenvolvimento}
+        
+        Apresente seus argumentos.
+        
+        Justifique o por quê das suas afirmações (inclua o leitor; prenda-o em seus argumentos, fazendo com que ele se sinta representado por suas palavras).
+        
+        Neste trecho, seu leitor já começa a formatar suas próprias conclusões e você o está preparando para o \emph{gran finale}.
+        
+        \title 4 {Conclusão}
+        
+        \textbf{Raciocínio argumentativo}: agora é a hora de você mostrar ao leitor suas resoluções sobre o que foi apresentado e discutido.
+        
+        Proponha soluções, mostre um caso do qual você participou, indique o que foi feito; \underline{opine}.
+        
+        Você também pode deixar no ar um dúvida ou obrança. Se a intridução e o desenvolvimento foram perfeitos, seus leitores irão perdoá-lo.
+        
+        \textbf{Gran finale}: amarre o fim do seu texto com suas primeiras frases ou, então, jusifique o título com uma frase ao estilo "pulo do gato".
+        
+        \title 4 {Dicas}
+        
+        \begin{itemize}
+            \item Só escreva sobre o que você domina e se tiver, realmente, algo a acrescentar sobre o assunto.
+            \item Jogue todas as suas ideias no papel e só depois preocupe-se com a estrutura. Refaça quantas vezes precisar.
+            \item Estimule seu poder de síntese -- menos é sempre mais!
+            \item Faça parágrafos com no máximo quatro linhas. Intercale frases longas com outras mais curtas.
+            \item Escreva de forma simples, evitando termos técnicos. Assim você alcançará um número maior de leitures -- que chegarão até o fim da leitura.
+            \item Se você tiver problemas com o uso dos "por quês", substitua por "pois". Isso vale para outros termos e regras gramaticais.
+            \item Tenha uma gramática sempre por perto.
+            \item Evite repetir termos ou palavras. Enriqueça seu estoque de sinônimos.
+            \item Lembre-se: o processo de comunicação só estará completo se o receptor entender a mensagem. Não jogue sua sabedoria ao vento. Seja simples e despresentioso ao redigir.
+            \item Submeta seu texto a segundos e terceiros antes de publicar. Invariavelmente, ficamos "cegos" diante de erros ínfimos.
+        \end{itemize}
+    \end{day}
+    
+    \begin{day}{24/06/2021}
+        O artigo de opinião caracteriza-se por omentar, analisar e opinar sobre fatos relevantes para a sociedade, que estão em destaque na mídia.
+        
+        \title 3 Atividade
+        
+        Na sua opinião, as redes sociais são um vício ou uma necessidade? Levante pelo menos 3 argumentos para defender seu ponto de vista.
+        
+        Depende do uso.
+        
+        Até um certo ponto as redes sociais podem ajudar a trazer informação para a pessoa, ser apenas um passa-tempo ou algo para descontrair de vez em quando. Porém quando o uso fica exagerado começa a gerar vício para o usuário, deixando-o dependente do uso, fazendo-o parar ou nem fazer tarefas obrigatórias do dia a dia ou diminuindo sua saúde mental.
+        
+        \title 3 {Estrutura de todo texto opinativo-argumentativo}
+        
+        \textbf{Introdução}: exposição do assunto que será tratado no decorrer da leitura;
+        \textbf{Desenvolvimento}: momento em que a argumentação do escritor será a principal ferramenta;
+        \textbf{Conclusão}: finalização do texto com 
+        
+        Escreva sua opinião sobre o uso da tecnologia atual em um texto de até 15 minhas. Opine sobre a necessidade.
     \end{day}
 \end{document}
