@@ -107,3 +107,7 @@
 %        \textbf{\it #1}
 %    \fi
 %}
+\newcommand{\placeholder}[1]{
+    \underline{\bf #1}
+}
+
