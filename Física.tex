@@ -1193,60 +1193,134 @@
         \begin{enumerate}
             \item[2.] Numa transformação isobárica, um gás realiza o trabalho de 400 J, quando recebe do meio externo 500 J. Determine a variação de energia interna do gás nessa transformação.
             \begin{align*}
-                Q &= 400 + (500 - 0) \\
-                Q &= 400 + 500       \\
-                Q &= 900\;J
+                             Q &= \tau + \Delta U \\
+                           500 &= 400 + \Delta U  \\
+                400 + \Delta U &= 500             \\
+                      \Delta U &= 500 - 400       \\
+                      \Delta U &= 100\;J
             \end{align*}
             
             \item[3.] Numa transformação isobárica, o volume de um gás ideal aumentou de 0,2 m³ para 0,6 m³, sob pressão de 5 N/m². Durante o processo, o gás recebeu 5 J de calor do ambiente. Determine a variação de energia interna do gás.
             \begin{align*}
-                \tau &= p * (V_2 - V_1) \\
-                \tau &= 5 * (0,6 - 0,2) \\
-                \tau &= 5 * 0,4         \\
-                \tau &= 2               \\[3pt]
-                   Q &= \tau + \Delta U \\
-                   Q &= 2 + (5 - 0)     \\
-                   Q &= 7\;J
+                \tau &= p * (V_2 - V_1)  \\
+                \tau &= 5 * (0,6 - 0,2)  \\
+                \tau &= 5 * 0,4          \\
+                \tau &= 2\;\si{\joule}   \\[3pt]
+                   Q &= \tau + \Delta U  \\
+                   5 &= 2 + \Delta U     \\
+                   2 + \Delta U &= 5     \\
+                       \Delta U &= 5 - 2 \\
+                       \Delta U &= 3\;\si{\joule}
             \end{align*}
             
             \item[4.] Uma bomba de potência 200 Watts comprime um gás contido num recipiente durante 30 segundos. Nesse tempo o gás dispersa para o ambiente externo uma quantidade de calor de 400 cal. De quando varia a energia interna do gás? Adote 1 cal = 4,18 J.
             \begin{align*}
                    J &= 400 * 4,18 \\
-                   J &= 1672       \\[3pt]
+                   J &= -1672      \\[3pt]
                    P &= \frac{\tau}{\Delta t} \\
                  200 &= \frac{\tau}{30 - 0}   \\
-                \tau &= 200 * 30              \\
-                \tau &= 6000\;J               \\[3pt]
+                \tau &= -200 * 30             \\
+                \tau &= -6000\;\si{\joule}    \\[3pt]
                    Q &= \tau + \Delta U  \\
-                   Q &= 6000 + (0 - 400) \\
-                   Q &= 6000 + -400      \\
-                   Q &= 5600\;J
+                -1672 &= -6000 + \Delta U \\
+                -6000 + \Delta U &= -1672 \\
+                        \Delta U &= -1672 + 6000 \\
+                        \Delta U &= 4328\;\si{\joule}
             \end{align*}
             
             \item[5.] Um sistema tem um volume inicial de $2,5 * 10^4\;cm^3$. Fornecendo-lhe uma quantidade de calor igual a 500 cal e mantendo-se a pressão constante e igual a $1,0 * 10^5\;N/m^2$, a energia interna aumenta 800 J. Calcule o volume final do sistema. Adote 1 cal = 4,18 J.
             \begin{align*}
-                                          J &= 500 * 4,18 \\
-                                          J &= 2090       \\[3pt]
-                                       2090 &= \tau + (800 + 0) \\
-                                 \tau + 800 &= 2090             \\
-                                       \tau &= 2090 - 800       \\
-                                       \tau &= 1290\;J          \\[3pt]
-                                       \tau &= p * (V_2 - V_1)                              \\
-                                       1290 &= 1 * 10^5 * (V_2 - 2,5 * 10^4)                \\
-                                       1290 &= 10 * 10^4 * (V_2 - 2,5 * 10^4)               \\
-                                       1290 &= (10 * 10^4 * V_2) - (10 * 10^4 * 2,5 * 10^4) \\
-                                       1290 &= (10 * 10^4 * V_2) - 25 * 10^8                \\
-                10 * 10^4 * V_2 - 25 * 10^8 &= 1290                                         \\
-                              10 * 10^4 V_2 &= 1290 + 25 * 10^8                             \\
-                                 100000 V_2 &= 2500001290                                   \\
-                                        V_2 &= \frac{2500001290}{100000}                    \\
-                                        V_2 &= 25000,0129\;cm^3
+                 V_1 &= \frac{2,5 * 10^4}{100^3 = 1 * 10^6} \\
+                 V_1 &= 2,5 * 10^{-3}\;m^3 \\[3pt]
+                 
+                   J &= 500 * 4,18 \\
+                   J &= 2090       \\[3pt]
+                   
+                \tau &= 1,0 * 10^5 * (V_2 - 2,5 * 10^{-3}) \\
+                   
+                         Q &= \tau + \Delta U \\
+                       500 &= \tau + 800      \\
+                \tau + 800 &= 500             \\
+                      \tau &= 500 - 800       \\
+                      \tau &= -300            \\[3pt]
+                
+                -300 &= 1,0 * 10^5 * (V_2 - 2,5 * 10^{-3}) \\
+                1,0 * 10^5 * (V_2 - 2,5 * 10^{-3}) &= -300 \\
+                V_2 - 2,5 * 10^{-3} &= \frac{-300}{1,0 * 10^5}
+                V_2 - 2,5 * 10^{-3} &= -3 * 10^7
+                V_2 &= -3 * 10^7 + 2,5 * 10^{-3}
+                V_2 &= -30000000 + 0,0025
+                V_2 &= -29999999,9975
             \end{align*}
         \end{enumerate}
     \end{day}
     
     \begin{day}{06/07/2021}
+        \title 3 {Óptica Geométrica}
         
+        A óptica é a parte da Física responsável pelo estudo da luz e dos fenômenos assiciados a ela. Como a luz apresenta comportamento dual, podendo ser considerada como onda ou patícula, os estudos da Óptoca dividem-se em duas partes:
+        
+        \begin{itemize}
+            \item\textbf{Óptica Física} -- quando se considera a natureza ondulatória da luz;
+            \item\textbf{Óptica Geométrica} -- quando a luz é aconsiderada uma partícula e seus estudos são feitos a partor do conceito de \textbf{raios de luz}, conferindo um modelo geométrico para a luz.
+        \end{itemize}
+        
+        \title 4 {Definições Importantes da Óptica Geométrica}
+        
+        Os \textbf{raios de luz} são segmntos de reta que representam a direção e o sentido de \textbf{propagação da luz}. Eles podem ser emitidos por dois tipos de fonte:
+        
+        \begin{itemize}
+            \item\textbf{Fontes Primárias}: que emitem luz própria, como o sol, a chama de uma vela ou uma lâmpada;
+            \item\textbf{Fontes Secundárias}: que refletem a luz que recebem de uma fonte primária, como a luz que reflete a luz que recebe do sol, ou um livro, que só pode ser visto se refletir a luz que recebe de uma lâmpada.
+        \end{itemize}
+        
+        As fontes luminosas também podem ser classificadas em relação à sua dimensão:
+        
+        \begin{itemize}
+            \item\textbf{Fontes Extensas}: quando possuem dimensões consideráveis se comparadas às dimensões do objeto a ser iluminado. Por exemplo: uma lâmpada acesa perto de um livro;
+            \item\textbf{Fontes Pontuais}: se as dimensões da fonte de luz forem consideradas desprezíveis em relação ao objeto a ser iluminado.
+        \end{itemize}
+        
+        Um conjunto de raios de luz constitui um feixe de luz. A luz emitida por uma fonte pontual propaga-se em todas as direções, sendo assim, ele é denominado \textbf{feixe divergente de raios de luz}. Quando os raios são paralelos, como no caso da luz emitida por uma lanterna, dizemos que o feixe de luz é \textbf{convergente}.
+        
+        \title 3 {Velocidade da Luz}
+        
+        A \textbf{velocidade da luz}, comunmente denotada pela letra $c$, vale cerca de \textbf{299.792.458 m/s}, ou seja, a cada segundo, a luz viaja aprocimadamente 300.000 km ao se propagar no vácuo. A escolha da letra $c$ deve-se à palavra em latim \emph{celeritas}, que significa rapidez.
+        
+        A velocidade da luz é utilizada para definir o metro, unidade de compimento usado pelo Sistema Internacional de Unidades (SI) como a medida do espaço percorrido pela luz no vácuo em um tempo 1/299792458 segundos.
+        
+        \title 3 {Atividades}
+        
+        \begin{enumerate}
+            \item[1.] Sabendo que 1 ano-luz é a distância que a luz percore no vácuo em um ano, calcular, em quilômetros, a distância percorrida pela luz em 2,5 anos.
+            
+            \begin{align*}
+                       c\;km/s   &= 300000\;km/s                                    \\
+                       c\;km/h   &= 300000 * 60            &= 18     * 10^6\;km/h   \\
+                       c\;km/dia &= 24     * 18     * 10^6 &= 432    * 10^6\;km/dia \\
+                       c\;km/ano &= 365    * 432    * 10^6 &= 157680 * 10^6\;km/ano \\[3pt]
+                 2,5 * c\;km/ano &= 2,5    * 157680 * 10^6 &= 394200 * 10^6\;km/ano
+            \end{align*}
+            
+            \item[2.] Uma nave espacial, à distância de $1404 * 10^6\;km$ da terra envia fotos do planeta Saturno através de sinais que se propagam com a velocidade da luz no vácuo ($3 * 10^5\;km/s$). O tempo em horas que o sinal leva para atingir a terra é de.
+            
+            \begin{align*}
+                c\;km/s &= 3  *          10^5                 \\
+                c\;km/h &= 60 * 60 * 3 * 10^5 &= 10800 * 10^5 \\[3pt]
+                t    /h &= \frac{1404 * 10^6}{10800 * 10^5} \\
+                t    /h &= \frac{1404 * 10^6}{1080 * 10^6}  \\
+                t    /h &= 1,3\;horas
+            \end{align*}
+            
+            \item[3.] Encontre, em metros, a distância correspondente a 5 anos-luz. A velocidade da luz no vácuo é igual a 300000 km/s
+            
+            \begin{align*}
+                 c\;km/s   &= 300000                            \\
+                 c\; m/s   &= 3  *                         10^8 \\
+                 c\; m/ano &= 60 * 60 * 24 * 365 * 5 * 3 * 10^8 \\[3pt]
+                 c\; m/ano &= 473040000                  * 10^8 &= 473,04 * 10^14
+            \end{align*}
+        \end{enumerate}
     \end{day}
 \end{document}
 
