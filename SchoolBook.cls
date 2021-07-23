@@ -111,3 +111,6 @@
     \underline{\bf #1}
 }
 
+\newcommand{\cbreak}{
+    \vfill\columnbreak
+}
